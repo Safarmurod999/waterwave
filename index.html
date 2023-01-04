@@ -31,6 +31,7 @@ h1 {
     color: white;
 }
 .content{
+    visibility: hidden;
     position:relative;    
     
     height:100%;
@@ -60,6 +61,7 @@ h1 {
     
 }
     </style>
+    
 </head>
 <body>
     <div class="content">
@@ -70,5 +72,13 @@ h1 {
         <h1>https://waterwavesd.netlify.app</h1>
         <h1>https://waterwavesd.netlify.app</h1>
      </div>    
+     <script type="text/javascript">
+        let a = prompt("Parolni kiriting:");
+        let div = document.getElementsByClassName('content')[0];
+        if(a == "Dilsora"){
+            div.style.visibility= "visible";
+        }
+        console.log(div);
+    </script>
 </body>
 </html>
